@@ -1,5 +1,6 @@
 import React from 'react';
 import {Nav} from 'react-bootstrap';
+import {Link, animateScroll as scroll} from 'react-scroll';
 
 function Navbar(props) {
   return (
@@ -9,7 +10,17 @@ function Navbar(props) {
             console.log(item)
             return (
             <Nav.Item>
-                <Nav.Link href={item.href}>{item.title}</Nav.Link>
+              <Nav.Link>
+                  <Link
+                    activeClass="active"
+                    to={item.href}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    {item.title}
+                  </Link>
+              </Nav.Link>
             </Nav.Item>
             )
         })}

@@ -32,8 +32,16 @@
   }
 }
 
-.jumbotron {
+.about {
   margin: 0;
+  padding-top: 10%;
+  padding-bottom: 0px;
+  display: flex;
+}
+
+.jumbotron {
+  background: none;
+  padding-bottom: 0px;
 }
 
 .cardDeck {
@@ -67,4 +75,27 @@
   padding-left: 10px;
   text-align: left;
   overflow-y: auto;
+}
+
+.iconHolder {
+  justify-content: center;
+  display: flex;
+}
+
+.socialIcon {
+  display: flex;
+  margin: 5px;
+}
+
+.profilePic {
+  width: 30vw;
+  height: 30vw;
+  margin: 20px;
+}
+
+.aboutContainer{
+  width: 65%;
+  height: 30vw;
+  padding: 20px;
+  vertical-align: center;
 }

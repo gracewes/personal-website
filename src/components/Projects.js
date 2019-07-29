@@ -1,19 +1,20 @@
 import React from 'react';
 import { Card, Jumbotron } from 'react-bootstrap';
 
-function Resume(props) {
+function Projects(props) {
   return (
-    <div id='resume'>
+    <div id='projects'>
       <Jumbotron>
-        <h3>Work Experience</h3>
+        <h3>Projects</h3>
         <section className='cardDeck'>
           {props.items.map(item => {
+            console.log(item.position !== null)
             return (
               <div className='resumeCardDiv'>
-                <Card className='bg-success resumeCard'>
-                  <Card.Header>{item.place}</Card.Header>
+                <Card className='bg-info resumeCard'>
+                  <Card.Header>{item.projectName}</Card.Header>
                   <Card.Body>
-                    <Card.Subtitle>{item.jobTitle}</Card.Subtitle>
+                  {item.position !== null && <Card.Subtitle>{item.position}</Card.Subtitle>}
                     <h6>{item.date}</h6>
                     <ul>
                       {item.descriptions.map(text => {
@@ -33,4 +34,4 @@ function Resume(props) {
   )
 }
 
-export default Resume;
+export default Projects;
