@@ -4,7 +4,7 @@ import {Nav} from 'react-bootstrap';
 function Navbar(props) {
   return (
     <div className="App">
-      <Nav className='navbar navbar-dark bg-dark justify-content-center' as='ul'>
+      <Nav className='navbar navbar-dark bg-dark justify-content-center fixed-top' as='ul'>
         {props.navButtons.map(item => { 
             console.log(item)
             return (

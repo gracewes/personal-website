@@ -32,22 +32,39 @@
   }
 }
 
-.resumeCard {
-  height: 50vh;
-  padding: 20px;
+.jumbotron {
+  margin: 0;
 }
 
-.resumeCard .h5 {
-  font-size: 1.5rem;
+.cardDeck {
+  overflow-x: auto;
+  min-width: 100%;
+  min-height: 50vh;
+  display: flex;
+}
+
+.cardDeck::-webkit-scrollbar {
+  display: none;
+}
+
+.resumeCard {
+  height: 50vh;
+  width: 40vw;
+  margin: 10px;
+}
+
+.resumeCardDiv {
+  display: flex;
+}
+
+.resumeCard .card-header {
+  font-size: 1.5rem
 }
 
 .resumeCard .card-body {
   padding: 0px;
   padding-top: 1.25rem;
+  padding-left: 10px;
   text-align: left;
-}
-
-.carousel-inner {
-  width: 50%;
-  margin-left: 25%;
+  overflow-y: auto;
 }

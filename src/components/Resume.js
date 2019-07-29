@@ -1,33 +1,35 @@
 import React from 'react';
-import {Carousel, Card} from 'react-bootstrap';
+import { Card, CardDeck, Jumbotron, Container, Row } from 'react-bootstrap';
 
 function Resume(props) {
     return (
         <div>
-            <Carousel interval={null}>
-                {props.items.map(item => {
-                    return (
-                        <Carousel.Item>
-                            <Card className='resumeCard'>
-                                <Card.Title>{item.place}</Card.Title>
-                                <Card.Subtitle>{item.jobTitle}</Card.Subtitle>
-                                <h6>{item.date}</h6>
-                                <Card.Body>
-                                    <ul>
-                                        {item.descriptions.map(text => {
-                                            return (
-                                                <li>{text}</li>
-                                            )
-                                        })}
-                                    </ul>
-                                </Card.Body>
-                            </Card>
-                        </Carousel.Item>
-                    )
-                })}
-            </Carousel>
+            <Jumbotron>
+                <h3>Work Experience</h3>
+                <section className='cardDeck'>
+                    {props.items.map(item => {
+                        return (
+                            <div className='resumeCardDiv'>
+                                <Card className='bg-success resumeCard'>
+                                    <Card.Header>{item.place}</Card.Header>
+                                    <Card.Body>
+                                    <Card.Subtitle>{item.jobTitle}</Card.Subtitle>
+                                    <h6>{item.date}</h6>
+                                        <ul>
+                                            {item.descriptions.map(text => {
+                                                return (
+                                                    <li>{text}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                    )})}
+            </section>
+            </Jumbotron>
         </div>
-    )
-}
-
-export default Resume;
+            )
+        }
+        
+        export default Resume;
