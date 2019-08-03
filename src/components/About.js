@@ -6,7 +6,7 @@ function About(props) {
   return (
     <div className='about' id='about'>
       <div className='profilePic'>
-        <img src='./images/profilepic.png' width='100%' height='100%'/>
+        <img src='./images/profilepic.png' alt='profile' width='100%' height='100%'/>
       </div>
       <div className='aboutContainer'>
         <Jumbotron fluid>

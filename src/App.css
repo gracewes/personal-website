@@ -57,7 +57,9 @@
 
 .resumeCard {
   height: 50vh;
-  width: 40vw;
+  min-height: 350px;
+  width: 30vw;
+  min-width: 400px;
   margin: 10px;
 }
 
@@ -98,4 +100,8 @@
   height: 30vw;
   padding: 20px;
   vertical-align: center;
+}
+
+.projectLink {
+  color: #6f42c1;
 }

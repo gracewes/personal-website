@@ -8,7 +8,6 @@ function Projects(props) {
         <h3>Projects</h3>
         <section className='cardDeck'>
           {props.items.map(item => {
-            console.log(item.position !== null)
             return (
               <div className='resumeCardDiv'>
                 <Card className='bg-info resumeCard'>
@@ -22,6 +21,8 @@ function Projects(props) {
                           <li>{text}</li>
                         )
                       })}
+                      {item.github !== null && item.github !== undefined && <li><a className='projectLink' href={item.github}>Github Repo</a></li>}
+                      {item.link !== null && item.link !== undefined && <li><a className='projectLink' href={item.link}>Live Project</a></li>}
                     </ul>
                   </Card.Body>
                 </Card>

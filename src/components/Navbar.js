@@ -1,6 +1,6 @@
 import React from 'react';
 import {Nav} from 'react-bootstrap';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 
 function Navbar(props) {
   return (
