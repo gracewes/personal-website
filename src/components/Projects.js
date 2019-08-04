@@ -5,7 +5,8 @@ function Projects(props) {
   return (
     <div id='projects'>
       <Jumbotron>
-        <h3>Projects</h3>
+        <h2>Projects</h2>
+        <hr/>
         <section className='cardDeck'>
           {props.items.map(item => {
             return (

@@ -5,7 +5,8 @@ function Resume(props) {
   return (
     <div id='resume'>
       <Jumbotron>
-        <h3>Work Experience</h3>
+        <h2>Work Experience</h2>
+        <hr/>
         <section className='cardDeck'>
           {props.items.map(item => {
             return (

@@ -1,14 +1,14 @@
 const navButtons = [
   { title: 'About', href: 'about' },
-  { title: 'Resume', href: 'resume' },
+  { title: 'Experience', href: 'resume' },
   { title: 'Projects', href: 'projects' },
   { title: 'Contact', href: 'contact' }
 ]
 
 const aboutData = {
-  introText: 'Howdy! Glad you\'re here! I\'m',
+  introText: 'Howdy! My name is',
   name: 'Grace Westerman',
-  about: 'I\'m a senior computer science major from San Antonio, Texas, but most importantly I\'m the loudest proudest member of the Fightin\' Texas Aggie class of 2020! Whoop!',
+  about: 'I\'m a senior computer science student at Texas A&M University in College Station, Texas, Whoop! I love learning new things while solving problems.',
   social: [
     {
       href: 'https://www.linkedin.com/in/grace-westerman',
