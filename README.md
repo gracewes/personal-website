@@ -1,6 +1,7 @@
 ## My Personal Page
 
 I built this page as a way to use some of my skills with React while displaying the data from my resume in a more fun and interactive format :)
+[gracewesterman.com](http://gracewesterman.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
